@@ -6,5 +6,4 @@ Babylon.js é uma biblioteca JavaScript e um mecanismo 3D para exibir gráficos 
 
 
 e 
-
-https://github.com/andff/Babylon.JS/blob/main/arquivos/babylonjs_logo.png?raw=true
+![alt text](https://github.com/andff/Babylon.JS/blob/main/arquivos/babylonjs_logo.png?raw=true)
