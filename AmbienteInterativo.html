@@ -23,15 +23,15 @@
         light.position = new BABYLON.Vector3(10, 10, 10);
 
         // Adiciona um plano ao fundo
-        const ground = BABYLON.MeshBuilder.CreateGround("ground", {width: 20, height: 20}, scene);
+        const ground = BABYLON.MeshBuilder.CreateGround("ground", {width: 40, height: 40}, scene);
         ground.position.y = -2;
 
         // Adiciona uma esfera giratória no centro da cena
-        const sphere = BABYLON.MeshBuilder.CreateSphere("sphere", {diameter: 2}, scene);
+        const sphere = BABYLON.MeshBuilder.CreateSphere("sphere", {diameter: 10}, scene);
         sphere.position.y = 1;
 
         // Adiciona uma caixa que pode ser clicada
-        const box = BABYLON.MeshBuilder.CreateBox("box", {size: 2}, scene);
+        const box = BABYLON.MeshBuilder.CreateBox("box", {size: 10}, scene);
         box.position.x = -5;
         box.position.y = 1;
 
@@ -55,8 +55,8 @@
         canvas.addEventListener("pointermove", function (evt) {
             if (isDragging && lastPointer) {
                 const delta = new BABYLON.Vector2(evt.clientX - lastPointer.x, evt.clientY - lastPointer.y);
-                box.position.x += delta.x * 0.1;
-                box.position.y -= delta.y * 0.1;
+                box.position.x += delta.x * 0.2;
+                box.position.y -= delta.y * 0.2;
                 lastPointer = new BABYLON.Vector2(evt.clientX, evt.clientY);
             }
         });
